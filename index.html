@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaWeb Studio - Agencia Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">InnovaWeb <span>Studio</span></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#cotizador">Cotizador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Soluciones Web a la Medida</h2>
+                <p>Especialistas en desarrollo frontend, integración dinámica y optimización de plataformas web.</p>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Diseño Web Responsive</h3>
+                        <p>Sitios web adaptables a cualquier dispositivo con HTML5 y CSS3.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Desarrollo Frontend</h3>
+                        <p>Interfaz interactiva y optimizada para la mejor experiencia de usuario.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Soporte y Mantenimiento</h3>
+                        <p>Gestión de contenidos, control de versiones y actualización continua.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Dinámica: Cotizador de Presupuesto -->
+        <section id="cotizador" class="dynamic-section">
+            <div class="container">
+                <h2>Cotiza tu Proyecto en Línea</h2>
+                <p>Completa el formulario para calcular el costo estimado de tu plataforma web.</p>
+                
+                <form id="calculatorForm" class="form">
+                    <div class="form-group">
+                        <label for="clientName">Nombre o Empresa:</label>
+                        <input type="text" id="clientName" placeholder="Ej: Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">Tipo de Sitio Web:</label>
+                        <select id="projectType">
+                            <option value="landing">Landing Page ($150.000 CLP)</option>
+                            <option value="corporativo">Sitio Corporativo ($350.000 CLP)</option>
+                            <option value="ecommerce">Tienda E-Commerce ($650.000 CLP)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deliveryTime">Plazo de Entrega Requerido:</label>
+                        <select id="deliveryTime">
+                            <option value="normal">Estándar (15 días - Sin recargo)</option>
+                            <option value="express">Express (5 días - +25% recargo)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn">Calcular Presupuesto</button>
+                </form>
+
+                <div id="resultBox" class="result-box hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 InnovaWeb Studio - Taller de Plataformas Web AIEP.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
